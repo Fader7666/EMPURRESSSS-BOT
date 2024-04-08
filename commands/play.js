@@ -6,7 +6,7 @@ let selectedThumbnailURL;
 
 module.exports = {
   name: "play",
-  description: "come one let's hear some music!!",
+  description: "come on let's hear some music!!",
   permissions: "0x0000000000000800",
   options: [{
     name: 'name',
@@ -109,7 +109,7 @@ module.exports = {
 
         collector.on('end', (msg, reason) => {
           if (reason === 'time') {
-            embed.setDescription(lang.msg80);
+            const lang = require('./lang.json');
             return interaction.editReply({ embeds: [embed], components: [] }).catch(e => { });
           }
         });

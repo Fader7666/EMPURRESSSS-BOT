@@ -106,7 +106,7 @@ app.get('/', (req, res) => {
   res.sendFile(imagePath);
 });
 app.listen(port, () => {
-  console.log(`🔗 Listening to EMPURRESS: http://localhost:${port}`);
+  console.log(`🔗 Listening to EMPURRESSSS: http://localhost: ${port}`);
 });
 printWatermark();
 
